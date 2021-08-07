@@ -1,0 +1,78 @@
+@charset "UTF-8";
+#cabecera{
+  background: pink;
+  box-shadow: #EAE3E9 5px 5px 3px;
+  margin-bottom: auto;
+}
+div.contenedor{
+  /*padding-bottom:10%;*/
+  max-width: 1500px;
+}
+div.logo{
+  float: left;
+  padding-top: 5px;
+  padding-left: 5px;
+
+}
+.barra ul{
+margin-left: 50%;
+}
+ul li{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-family:candara,arial,sans-serif;
+  margin-bottom: 2%;
+
+}
+ul li a{
+  color: black;
+  text-decoration: none;
+  padding: 5%;
+}
+ul li a:hover{
+  background-color: #ddab13;
+}
+section.Contactanos{
+margin-top: 10%;
+text-align: center;
+}
+.Mision-Valores{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+div.card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px 20px 0px 20px;
+  text-align: center;
+  transition: all 0.25s;
+  font-family: candara, cursive, arial;
+}
+h4{
+  color: #ff1493;
+  font-size: 150%;
+}
+
+div.card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)
+}
+div.card img{
+width: 330px;
+height: 220px;
+}
+.Contactanos{
+  background-color: pink;
+  padding: 5px;
+  font-family: candara,cursive,arial;
+
+}

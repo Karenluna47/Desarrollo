@@ -1,0 +1,80 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['rol'])) {
+  header('location: proyecto.php');
+}else {
+  if($_SESSION['rol'] !=1){
+    header('location: proyecto.php');
+  }
+}
+?>
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web">
+    <meta name="viewport" content="width-device-width, users-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>SAC</title>
+    <link rel="stylesheet" href="css/admi.css">
+    <link rel="stylesheet" href="css/fuente.css">
+    <link rel="stylesheet" href="css/galer.css">
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="css/bread.css">
+  </head>
+  <body>
+    <div class="contenedor">
+<header id=cabecera>
+  <div class="logo">
+<img src="img/logo.png" alt="logo" width="100px">
+</div>
+<br>
+<br>
+<h1>La Luz de la Esperanza</h1>
+</header>
+<nav>
+  <div class="navegacion">
+  <ul>
+ <li><a href="home.html">Inicio</a></li>
+ <li><a href="historial_d.html">Donadores</a></li>
+ <li><a href="historial_b.html">Beneficiarios</a></li>
+ <li><a href="historial_a.html">Apoyos</a></li>
+ <li><a href="historial_c.html">Convenios</a></li>
+ <li><a href="historial_s.html">Socios</a></li>
+ <li><a href="historial_e.html">Eventos</a></li>
+ </ul>
+</div>
+</nav>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"> <a href="home.html"> Inicio</a></li>
+</ol>
+<section>
+  <br>
+  <br>
+  <h2>Bienvenidos</h2>
+
+  <div class="galeria">
+
+<a href="registro_d.html"><img src="img/don.jpg" class="galeria_img"></a>
+<a href="registro_b.html"><img src="img/2.png" class="galeria_img"></a>
+<a href="registro_a.html"><img src="img/apoyos.jpg" class="galeria_img"></a>
+<a href="registro_c.html"><img src="img/conv.jpg" class="galeria_img"></a>
+<a href="registro_s.html"><img src="img/5.jpg" class="galeria_img"></a>
+<a href="registro_e.html"><img src="img/even.jpg" class="galeria_img"></a>
+
+<div class="barra">
+  <footer>
+    <a href="Eventos.php"><img src="img/calendario.png" width="70px"></a>
+  <a href="desconectar.php"><img src="img/sesion.png" width="70px"></a>
+  </footer>
+
+
+
+</div>
+
+
+  </div>
+</section>
+  </div>
+  </body>
+</html>

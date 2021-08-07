@@ -1,0 +1,83 @@
+
+<?php
+try {
+require_once('conexion.php');
+$sql='SELECT * FROM socio';
+$resultado=$conexion->query($sql);
+
+} catch(Exception $e){
+    $error=$e->getMessage();
+  }
+ ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web">
+        <meta name="viewport" content="width-device-width, users-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>SAC</title>
+    <link rel="stylesheet" href="css/r_d.css">
+    <link rel="stylesheet" href="css/fuente.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/bread.css">
+  </head>
+  <body>
+    <div class="contenedor">
+<header id=cabecera>
+  <div class="logo">
+<img src="img/logo.png" alt="logo" width="100px">
+</div>
+<br>
+<br>
+<h1>La Luz de la Esperanza</h1>
+</header>
+<nav>
+  <div class="navegacion">
+    <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="historial_d.html">Donadores</a></li>
+        <li><a href="historial_b.html">Beneficiarios</a></li>
+        <li><a href="historial_a.html">Apoyos</a></li>
+        <li><a href="historial_c.html">Convenios</a></li>
+        <li><a href="historial_s.html">Socios</a></li>
+        <li><a href="historial_e.html">Eventos</a></li>
+        </ul>
+</div>
+</nav>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"> <a href="administrador.php"> Inicio</a></li>
+  <li class="breadcrumb-item"> <a href="socios_tabla.php"> Socios </a></li>
+</ol>
+<div class="tabla">
+<table>
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Nombre del socio</th>
+    <th>Telefono</th>
+    <th>Direccion</th>
+    <th>RFC</th>
+    <th>Editar</th>
+    <th>Eliminar</th>
+
+  </tr>
+  </thead>
+    <?php while($mostrar=$resultado->fetch_assoc()){ ?>
+  <tr>
+    <td class="data">Id:<?php echo $mostrar['id']; ?></td>
+    <td class="data">Nombre:<?php echo $mostrar['nombre_socio']; ?></td>
+    <td class="data">Telefono:<?php echo $mostrar['telefono_socio']; ?></td>
+    <td class="data">Direccion:<?php echo $mostrar['direccion_socio']; ?></td>
+    <td class="data">RFC:<?php echo $mostrar['rfc_socio']; ?></td>
+    <td class="data">
+    <a href="editar_socio.php?id=<?php echo $mostrar['id']; ?>">Editar</a>
+    </td>
+    <td>
+    <a href="eliminar_socio.php?id=<?php echo $mostrar['id']; ?>">Eliminar</a>
+    </td>
+  </tr>
+<?php } ?>
+</table>
+</div>
+</body>
+</html>

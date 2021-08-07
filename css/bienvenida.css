@@ -1,0 +1,23 @@
+@font-face {
+  font-family:Billionthine Personal Use Only;
+  src:url(fuentes/BillionthinePersonalUseOnly.ttf);
+
+}
+h1{
+  text-align: center;
+  font-family:Billionthine Personal Use Only,candara,arial;
+  font-size: 100px;
+ color: #ff1493;
+ padding-top: 10%;
+}
+
+h2{
+  text-align: center;
+  font-family:Hello, arial;
+  font-size: 20px;
+  padding-left: 2%;
+}
+@font-face {
+font-family: Hello;
+src:url(fuentes/Hello.ttf);
+}

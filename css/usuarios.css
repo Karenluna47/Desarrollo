@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+#cabecera{
+  background: pink;
+  box-shadow: #EAE3E9 5px 5px 3px;
+}
+div.contenedor{
+  padding-bottom:0px;
+
+}
+div.logo{
+  float: left;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+div.navegacion{
+  background-color: pink;
+  padding: 5px;
+  box-shadow: #EAE3E9 5px 5px 3px;
+}
+ul li{
+  display: inline-block;
+  width: 14%;
+  text-align: center;
+  font-family:candara,arial,sans-serif;
+}
+ul li a{
+  color: black;
+  text-decoration: none;
+  padding:5px;
+}
+ul li a:hover{
+  background-color: #ddab13;
+}
+h2{
+  text-align: center;
+  font-family: cursive,fantasy,sans-serif;
+  color: #ff1493;
+}
+.menu{
+  background-color: pink;
+  padding-top: 50px;
+  margin-top: 40PX;
+  float: left;
+  height:200px;
+  margin-bottom: 30px;
+  box-shadow: #EAE3E9 5px 5px 3px;
+  font-family: candara,fantasy,sans-serif;
+}
+.menu2{
+  background-color: pink;
+  padding-top: 50px;
+  margin-top: 40PX;
+  float: left;
+  height:400px;
+  margin-bottom: 30px;
+  box-shadow: #EAE3E9 5px 5px 3px;
+  font-family: candara,fantasy,sans-serif;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+.menu2 a{
+  text-decoration: none;
+  color: black;
+}
+div.pie{
+background-color:pink;
+clear: both;
+text-align: center;
+box-shadow: #EAE3E9 5px 5px 3px;
+}
+div.contenido{
+ margin-left: 500px;
+ margin-right: 300px;
+}
+div.contenido{
+  border: 10px solid pink;
+  padding: 15px;
+  font-family: candara,fantasy,arial;
+}
+div.campo{
+  margin-bottom: 20px;
+}
+input, textarea{
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+input[type="submit"]{
+  background-color: pink;
+  border: none;
+  font-family: candara,fantasy,arial;
+  font-size:14px;
+  width: 30%;
+}

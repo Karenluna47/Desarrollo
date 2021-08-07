@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web">
+        <meta name="viewport" content="width-device-width, users-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>SAC</title>
+    <link rel="stylesheet" href="css/pro.css">
+    <link rel="stylesheet" href="css/fuente.css">
+    <link rel="stylesheet" href="css/bread.css">
+
+
+    </head>
+  <body>
+<header id=cabecera>
+  <div class="logo">
+<img src="img/logo.png" alt="logo" width="100px">
+</div>
+<br>
+<h1>La Luz de la Esperanza</h1>
+</header>
+<body>
+  <ol class="breadcrumb">
+           <li class="breadcrumb-item"> <a href="index.html"> Inicio</a></li>
+           <li class="breadcrumb-item"> <a href="proyecto.php"> Login </a></li>
+       </ol>
+<div class="contenedor">
+    <form id="formulario" class="formulario" method="post">
+      <fieldset>
+        <img src="img/usuario.png" width="150px">
+      <div class="campo">
+        <label>Usuario: </label>
+        <input type="text" name="username" id="username" placeholder="Nombre de Usuario" autocomplete="off">
+        <br>
+        <br>
+        <label>Contraseña: </label>
+        <input type="password" name="password" id="password" placeholder="Contraseña">
+        <br>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-default">Entrar</button>
+      </fieldset>
+    </form>
+  </div>
+  <script src="js/validacion.js"> </script>
+  </body>
+</html>

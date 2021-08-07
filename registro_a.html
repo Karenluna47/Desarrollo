@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web">
+    <meta name="viewport" content="width-device-width, users-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>SAC</title>
+    <link rel="stylesheet" href="css/r_d.css">
+    <link rel="stylesheet" href="css/fuente.css">
+    <link rel="stylesheet" href="css/bread.css">
+  </head>
+  <body>
+    <div class="contenedor">
+<header id=cabecera>
+  <div class="logo">
+<img src="img/logo.png" alt="logo" width="100px">
+</div>
+<br>
+<br>
+<h1>La Luz de la Esperanza</h1>
+</header>
+<nav>
+  <div class="navegacion">
+  <ul>
+    <li><a href="administrador.php">Inicio</a></li>
+    <li><a href="donadores_tabla.php">Donadores</a></li>
+    <li><a href="beneficiarios_tabla.php">Beneficiarios</a></li>
+    <li><a href="apoyos_tabla.php">Apoyos</a></li>
+    <li><a href="convenios_tabla.php">Convenios</a></li>
+    <li><a href="socios_tabla.php">Socios</a></li>
+    <li><a href="eventos_tabla.php">Eventos</a></li>
+ </ul>
+</div>
+</nav>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"> <a href="administrador.php"> Inicio</a></li>
+  <li class="breadcrumb-item"> <a href="registro_apoyo.php"> Registro de Apoyos </a></li>
+</ol>
+<!--
+<aside class="menu">
+
+  <blockquote><a href="registro_d.php">Registrar Donadores</a></blockquote>
+  <br>
+  <br>
+  <blockquote><a href="registro_ben.php">Registrar Beneficiarios</a></blockquote>
+  <br>
+  <br>
+  <blockquote><a href="registro_apoyo.php">Registrar Apoyos</a></blockquote>
+  <br>
+  <br>
+  <blockquote><a href="registro_con.php">Registrar Convenios</a></blockquote>
+  <br>
+  <br>
+  <blockquote><a href="registrar_so.php">Registrar Socios</a></blockquote>
+  <br>
+  <br>
+  <blockquote><a href="recaudacion.php">Recaudacion de Eventos</a></blockquote>
+  <br>
+  <br>
+  <blockquote><a href="desconectar.php"><strong>Cerrar sesión</strong></a></li></blockquote>
+        </aside>
+-->
+        <h1 id="nombre_tabla">Apoyos</h1>
+        <div class="contenido">
+        <h2>Agregar apoyos recibidos</h2>
+        <br>
+        <form  action="apoyo.php" method="post">
+          <div class="campo">
+            <label for="tipo">Tipo de apoyo: </label>
+              <input type="radio" name="tipo" id="tipo" value="Efectivo"> Efectivo
+              <input type="radio" name="tipo" id="tipo" value="Insumos" > Insumos
+          </div>
+          <div class="campo">
+            <label for="cantidad">cantidad entregada: </label>
+              <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" autocomplete="off" required title="El campo Cantidad tiene que tener numeros" pattern="[0-9]{2-10}">
+              </div>
+              <div class="campo">
+                <label for="fecha">  Fecha de entrada: </label>
+                  <input type="date" name="fecha" id="fecha" placeholder="Fecha la cual se recibio" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="fecha1">  Fecha de salida: </label>
+                  <input type="date" name="fecha1" id="fecha1" placeholder="Fecha la cual se entregó" autocomplete="off">
+              </div>
+          <div class="campo">
+            <label for="descripcion">Descripcion: </label>
+              <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del apoyo" autocomplete="off">
+          </div>
+          <div class="campo">
+            <label for="motivo">Motivo por el cual se entrega el apoyo: </label>
+              <input type="text" name="motivo" id="motivo" placeholder="Breve texto" autocomplete="off">
+          </div>
+                  <input type="submit"  value=" Agregar">
+        </form>
+        </div>
+
+        <div class="volver">
+          <a href="administrador.php">
+            <h2>Volver</h2>
+          </a>
+        </div>
+
+  </div>
+  </body>
+</html>

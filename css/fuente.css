@@ -1,0 +1,15 @@
+@font-face {
+  font-family:Billionthine Personal Use Only;
+  src:url(fuentes/BillionthinePersonalUseOnly.ttf);
+}
+h1{
+  text-align: center;
+  font-family:Billionthine Personal Use Only,candara,arial;
+  font-size: 60px;
+ color: #ff1493;
+}
+@media screen and (max-width:800px) {
+    h1{
+      font-size: 40px;
+    }
+}

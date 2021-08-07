@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina web">
+    <meta name="viewport" content="width-device-width, users-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>SAC</title>
+    <link rel="stylesheet" href="css/r_d.css">
+    <link rel="stylesheet" href="css/fuente.css">
+    <link rel="stylesheet" href="css/bread.css">
+  </head>
+  <body>
+
+     <div id="response"class="contenedor">
+<header id=cabecera>
+  <div class="logo">
+<img src="img/logo.png" alt="logo" width="100px">
+</div>
+<br>
+<br>
+<h1>La Luz de la Esperanza</h1>
+</header>
+<nav>
+  <div class="navegacion">
+  <ul>
+    <li><a href="administrador.php">Inicio</a></li>
+    <li><a href="donadores_tabla.php">Donadores</a></li>
+    <li><a href="beneficiarios_tabla.php">Beneficiarios</a></li>
+    <li><a href="apoyos_tabla.php">Apoyos</a></li>
+    <li><a href="convenios_tabla.php">Convenios</a></li>
+    <li><a href="socios_tabla.php">Socios</a></li>
+    <li><a href="eventos_tabla.php">Eventos</a></li>
+ </ul>
+</div>
+</nav>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"> <a href="home.html"> Inicio</a></li>
+  <li class="breadcrumb-item"> <a href="registro_d.html"> Registro de Donadores </a></li>
+</ol>
+
+<h1 id="nombre_tabla">Donadores</h1>
+        <h2 id="coordenadas"></h2>
+        <div class="contenido">
+        <h2>Agregar donadores</h2>
+        <br>
+        <form  method="post" id="formulario">
+          <div class="campo">
+            <label for="nombre">Nombre: </label>
+              <input type="text" name="nombre" id="nombre" autocomplete="off" >
+          </div>
+          <div class="campo">
+            <label for="tipo">Tipo de donacion: </label>
+              <input type="radio" name="tipo" id="tipo" value="Efectivo">Efectivo
+              <input type="radio" name="tipo" id="tipo" value="Insumos">Insumos
+          </div>
+          <div class="campo">
+            <label for="cantidad">cantidad donada: </label>
+              <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad sin centavos" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="fecha">  Fecha de donacion: </label>
+                  <input type="date" name="fecha" id="fecha" placeholder="Fecha actual" autocomplete="off">
+              </div>
+                  <input type="submit"  value=" Agregar " id="enviar">
+
+        </form>
+<div id="respuesta">
+
+</div>
+        </div>
+        <div id="error">
+
+          </a>
+        </div>
+        <!--<script type="text/javascript">
+
+        function ajax(){
+          const http = new XMLHttpRequest();
+          const url = 'http://localhost/Asociacion/registro_d.php'
+
+          http.onreadystatechange =function(){
+            if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            //alert("Hola a todos");
+            }
+          }
+          http.open("GET", url);
+          http.send();
+        }
+
+        let nombre=document.getElementById('nombre_tabla')
+
+        nombre.onmouseover=function(){
+          nombre.innerHTML='Gracias'
+        }
+        nombre.onmouseout=function(){
+          nombre.innerHTML='Donadores'
+        }
+      nombre.onclick=function(){
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        document.getElementById("coordenadas").innerHTML = coords
+      }
+                  ajax();
+
+    </script>-->
+<!--<script type="text/javascript">
+  let nombre=document.getElementById('nombre_tabla')
+
+  nombre.onmouseover=function(){
+    nombre.innerHTML='¡Gracias!'
+  }
+  nombre.onmouseout=function(){
+    nombre.innerHTML='Donadores'
+  }
+
+  function showCoords(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = "X coords: " + x + ", Y coords: " + y;
+  document.getElementById("demo").innerHTML = coords;
+}
+</script>-->
+  </div>
+  <script  src = " https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "> </script>
+  <script src="./js/script.js"></script>
+  </body>
+</html>
